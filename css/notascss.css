@@ -1,0 +1,91 @@
+/*hay diferentes formas de dar estilo en CSS*/
+  /*0.Selector universal*/
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }  
+
+  html{
+    font-size: 62.5;
+  }
+
+  /*  1. por selector de html*/
+    P{
+        color:blue;
+        font-size: 1.5rem;
+    }
+
+    /* 2. CLASE */
+    .titulo {
+        color:rgba(255, 196, 0, 0.755);
+        font-size: 20px;
+    }
+
+   
+    /*3. ID*/
+    #textoprueba {
+  
+        font-size: medium;
+        color:brown;
+    }
+
+/*PSEUDOCLASES: Define un estilo especial de un elemento*/
+
+.main-nav{
+    margin-top: 10px;       /**/
+    list-style:none;        /*Quita los puntos o bulets que trae por defecto una lista desordenada*/
+    padding-left: 0;        /*Quita el espacio interno en el contenedor (la sejuela)*/
+    background-color:rgb(57, 57, 178);
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a /*esto se aplicaria a los item que les ponga esta clase y que sean de tipo ancla en html*/
+{
+    color: white;
+    padding: 5px;
+    border-radius: 2px; /*redondea las esquinas cuando tengo cajas en cada texto (no es este el caso) */
+    text-decoration: none; /*quita el subrrayado de los enlaces que viene por defecto en la etiquetas de ancla en html*/
+}
+
+.main-nav__item a:hover /*en este caso es para especificamente cuando se pasa el mause por encima del esa clase */
+{
+    color:blue;
+}
+
+.main-nav__item a:active /*en este caso es para especificamente hago click antes de soltar*/
+{
+    color:dimgray;
+}
+
+/*PSEUDO ELEMENTOS: Define el estilo de una parte especifica de un elemento */
+.main-nav__item a::after 
+{
+    content:" | "
+}
+/*MODELO DE CAJA*/
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px;
+    
+}
+
+/*ESPECIFICITY: Ver este video!! https://www.youtube.com/watch?v=CHyPGSpIhSs&list=PLZlA0Gpn_vH9D0J0Mtp6lIiD_8046k3si&index=3 */
+
+/*COMBINADORES*/
+
+h1 ~ p {
+    color:rgb(0, 255, 123);
+    font-size: 20px;
+}
+
+div > p {
+    color:blueviolet;
+    font-size: 40px;
+
+}

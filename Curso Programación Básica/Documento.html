@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>OTRO</title>
+    <style>
+        body 
+        {
+        background-color:black ;
+        color: blanchedalmond;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos a juagar con window y con document</h1>
+    <P></P>
+    <canvas width="300" height="300" id="Dibujito"></canvas>
+    <script>
+        var d = document.getElementById("dibujito");
+        var Lienzo = d.getContext(contextId "2d");
+        function Dibujalineas (color,x1,y1,x2,y2)
+        {
+            Lienzo.beginPath();
+            Lienzo.strokeStyle = color;
+            Lienzo.moveTo(x1, y1);
+            Lienzo.lineTo(x2, y2);
+            Lienzo.closePath();
+        }
+        Dibujalineas("red", 10, 300, 220, 10);
+    </script>
+</body>

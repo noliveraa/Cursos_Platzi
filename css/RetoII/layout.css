@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    background-color: peachpuff;
+    padding: 10px;
+    height: 8vh;
+    position: relative;
+}
+
+    .nav{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        
+    }
+
+    .nav li{
+        font-size: 3rem;
+        margin: 10px;
+        text-align: center;
+        display: inline-block;
+        list-style: none;
+        text-align: center;
+    }
+
+    .header div{
+        font-size: 3rem;
+        margin: 10px;
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+    }
+
+
+
+
+.main{
+    height: 90vh;
+   
+}
+
+    .maincontent{
+        background-color: rgb(235, 235, 235);
+        font-size: 2rem;
+        padding: 2vw;
+        text-align: justify;
+        width: 70vw;
+        height: 84vh;
+        display: inline-block;
+        position:absolute;
+        left: 30vw;
+    }
+
+    .sidebar{
+        background-color: rgb(78, 161, 160);
+        width: 30vw;
+        height: 84vh;
+        display: inline-block;
+    }
+
+        .sidebar div{
+            background-color: rgb(149, 190, 190);
+            border-radius: 2rem;
+            height: 20vh;
+            width: 25vw;
+            margin: 0.8vh auto;
+            
+            
+        }
+
+.footer{
+    background-color: peachpuff;
+    padding: 3vh;
+    height: 8vh;
+    width: 100vw;
+    font-size: 2.5rem;
+    text-align: center;
+    position:fixed;
+    bottom:0;
+}

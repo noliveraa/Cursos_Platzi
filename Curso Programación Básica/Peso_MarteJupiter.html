@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>PESO PLANETA</title>
+    <style>
+        body 
+        {
+        background-color:black ;
+        color: blanchedalmond;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>DESCUBRE TU PESO EN OTRO PLANETA</h1>
+    <P></P>
+    <script>
+        var Peso_tierra = prompt("Cuanto pesa en la tierra?");
+        var gravedad_Tierra = 9.8;
+        var gravedad_Marte = 3.7;
+        var gravedad_Jupiter = 24.7;
+        var SeleccionPlaneta = prompt ("\n Selecciona 1 si quieres saber tu peso en Marte o 2 para Jupiter")
+        var Planeta = "Planeta elejido"
+        var Peso_obj = "indefinido"
+        if (SeleccionPlaneta == 1)
+        {
+            var Peso_obj = parseInt(Peso_tierra*gravedad_Marte/gravedad_Tierra);
+            Planeta = "MARTE"
+        }
+        else if (SeleccionPlaneta == 2) 
+        {
+            var Peso_obj = parseInt(Peso_tierra*gravedad_Jupiter/gravedad_Tierra);
+            Planeta = "JUPITER"
+        }     
+        else
+        {
+            document.write("El valor ingresado no es valido")
+        }    
+            document.write("Tu peso en " + Planeta + " es "+ Peso_obj+ " Kg")
+    </script>
+</body>

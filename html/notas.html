@@ -1,0 +1,124 @@
+<!DOCTYPE html> <!--indica que esto es html 5-->
+<html lang="es"> <!--esto indica que esta pag se escribe en español-->
+    
+    <head> <!-- Aca ponemos todo lo que le damos al navegador para poder cargar el proyecto-->
+        
+        <meta charset="UTF-8"/> <!--caracteres especiales del español-->
+        <meta name="description" content="Aca se pone la descripción de la pág (Lo que sale en google debajo del url"/>
+        <meta name="robots" content="index,follow"/> <!--Autorizamos a los robots de buscadores para encontrar nuestra pagina-->
+        <title> Nombre de la pag</title> <!--Titulo de la pestaña en el momento en que la persona entra al proyecto-->
+        <meta name="viwport" content="with=device-width, initial-scale=1.0"/> <!--esto hace que la pagina sea responsive al tamaño de dispositivo-->
+        
+        <link rel="stylesheet" href="./notascss.css"><!--link al -->
+    
+    </head>
+    
+    <body> <!--Aca va todo lo que el usuario ve-->
+        <header>    <!--HEADER-->
+            <nav>   <!-- /BARRA DE NAVEGACIÓN-->
+
+            </nav>
+        </header>  
+        
+        <main>      <!--MAIN CONTENT-->
+            <section>
+                <article>
+                    
+                    <h1>Este es un titulo tipo h1</h1>
+                    <h2>Este es un titulo tipo h2</h2>
+                    <h3>Este es un titulo tipo h3</h3>
+                    <h4>Este es un titulo tipo h4</h4>
+                    <p>Esto es un parrafo</p>
+                    
+                    <a href="https://www.coursera.org/">soy un link</a>
+
+                </article>
+            </section>
+            
+            <section>
+            <ul>        <!--unordered list-->
+                <li>Elemento 1 de la lista</li>
+                <li>Elemento 2 de la lista</li>
+                <li>Elemento 3 de la lista</li>
+            </ul>
+
+            <ol>        <!--order list (lista numerada)-->
+                <li>Elemento 1 de la lista</li>
+                <li>Elemento 2 de la lista</li>
+                <li>Elemento 3 de la lista</li>
+            </ol>
+
+            </section>
+
+            <section>
+                <!--Imagenes-->
+                <figure>
+                    <img src="./Puppy.jpg" width="100" alt="Es una imagen de un perrito" />
+                    <!-- src donde se encuentra la imagen, with el ancho en px y el alt es una descripción de la imagen que ayuda en teminos de accesibilidad en caso de que no cargue la imagen sale la descripción-->
+                
+                    <figcaption>Esta es la descripción que sale junto con la imagen</figcaption>
+                
+                </figure>
+
+                <!--Video-->
+                <video src="./Video.mp4#t=5,8" controls="auto" width="600"></video>
+                <!--src source, el #t= indica el segundo en el que quiero iniciar el video y en el que quiero que termine, auto es que en el momento en que inicia a cargar la pag vaya cargando la pag-->
+                <!--Se puede poner varios sources para que el navegador decida cual puede reproducir segun sus capacidades-->
+
+            </section>
+
+            <section>
+                <!--Formulario-->
+                <form action="">
+                    <label for="nombre">
+                        <span>Pregunta del formulario</span>
+                        <input type="text"id="nombre" name="nombre"  placeholder="tu nombre" autocomplete="name" required/> <!--el id y el name debe ser el mismo for del label-->
+                        <!--hay varios tipos puede ser texto, numero, fecha, etc. el placeholder es lo que dice antes de que escribas algo, autocomplete es para que tenga ayuda de la info que el usuerio ya tiene en el navegador, y el required es que no permite el envio hasta tener todo completado-->
+                    </label>
+                    <label for="apellido">
+                        <span>Otra pregunta del formulario</span>
+                        <input type="text"id="apellido"/> 
+                    </label>
+                    <label for="fecha">
+                        <span>Otra pregunta tipo fecha</span>
+                        <input type="date"id="fecha"/> 
+                    </label>
+                    <label for="Calendario">
+                        <span>Otra pregunta tipo fecha</span>
+                        <input type="datetime-local"id="calendario" name="calendario"/> 
+                    </label>
+                    <!--opciones de selección: hay dos formas de hacerlo-->
+                    <select name="opciones" id="">
+                        <option value="opción 1">opción 1</option>
+                        <option value="opción 2">opción 2</option>
+                        <option value="opción 3">opción 3</option>
+                        <option value="opción 4">opción 4</option>
+                    </select>
+                        <!--esta es más amigable con el usuario en opcion movil o cuando hay muchas opciones la diferencia es que el usuario escribe y segun eso el le da opcion y captura lo que escribe cuando la opcion no existe-->
+                    <input list="opciones">
+                    <datalist id="opciones">
+                        <option value="opción 1">opción 1</option>
+                        <option value="opción 2">opción 2</option>
+                        <option value="opción 3">opción 3</option>
+                        <option value="opción 4">opción 4</option>
+                    </datalist>
+
+                    <input type="submit" value="ENVIAR"/> <!--Al darle enviar se manda la info con el "name"-->
+    
+                </form>
+
+                <!--Button: los botenes son más flexibles aplican para otras cosas a diferencia del input que es solo para formularios-->
+                <button>Mandar</button>
+            </section>
+
+        </main>
+
+        <footer>    <!--FOOTER-->
+
+        </footer>
+
+
+    </body>
+
+</html>
+
