@@ -7,6 +7,19 @@
         b = 6; //reasignación
         var a = "aa"//redeclaración
 
+        //existen tres formas de declarar variables, con const, let y var. var es la mas antigua y ya no se usa pues tiene un scope de funcion y no se bloque como let y const. 
+        //se busca que siempre definir variables en el scope mas pequeño donde van a ser utilizadas. 
+        function fruits () {
+            if (true){
+                var fruit1 ="Apple";
+                let fruit2 ="Kiwi";
+                const fruit3 ="Banana";
+            }
+            console.log(fruit1) //se podrá leer a pesar de que esta definida dentro del un bloque y llamada por fuera de el por que tiene scope de función 
+            console.log(fruit2) // en estos dos casos como se esta llamando la variable fuera del bloque donde fue declarada y es una variable de scope de bloque, no existe en ese scope
+            console.log(fruit3)
+        }
+
         //Ejemplos en los que Boolean devuelve Falso:
         Boolean(0); //false
         Boolean(null); //false
@@ -21,6 +34,8 @@
         Boolean([]); //true aunque el array esté vacío
         Boolean({}); //true aunque el objeto esté vacío
         Boolean(function(){}); //Cualquier función es verdadera también
+
+
 
         //arrays
 
@@ -90,7 +105,7 @@
     }
 
 
-    //nota: cuando 
+    //nota: cuando no declaramos una variable sino que solamente la asignamos esta se vuelve una variable global 
 
     //FUNCIONES
         //declarativas
@@ -108,7 +123,10 @@
     //coerción: es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción:
         //Coerción implícita = es cuando el lenguaje nos ayuda a cambiar el tipo de valor.
         //Coerción explicita = es cuando obligamos a que cambie el tipo de valor.
-
+    
+    //Closure: Los closures permiten acceder al ámbito de una función exterior desde una función interior. En javascript, los closures se crean cada vez que una función es creada.
+    //Un closure es cuando una función accede a una variable fuera de su contexto
+    
     //CONDICIONALES
         //IF
             if (edad >= 18){
@@ -236,6 +254,7 @@
                         return articulo.costo <= 500;
                 });
 
+                
                 //generar un array con solo una de las caracteristicas de los objetos en el array de objetos
 
                 var nombredelosarticulos = articulos.map(function(articulo){
