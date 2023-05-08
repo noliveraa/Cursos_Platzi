@@ -1,5 +1,17 @@
 {
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
+  "name": "curso-asincronismo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [
+    "jsvascript"
+  ],
+  "author": "Nathalia Olivera <oliveranathaliaa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
   }
 }
