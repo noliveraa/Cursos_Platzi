@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d ./curso-asincronismo/src/Proyecto"
+    "deploy": "gh-pages -b main -d curso-asincronismo/src/Proyecto"
   },
   "keywords": [
     "jsvascript"
