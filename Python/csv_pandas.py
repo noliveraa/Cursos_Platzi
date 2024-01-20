@@ -1,4 +1,4 @@
-#PANDAS: Es una herramienta para lectura de archivos tipo csv 
+#PANDAS: Es una libreria de python que entre otras funciones permite leer archivos tipo csv 
 
 import pandas as pd
 import matplotlib.pyplot as plt
